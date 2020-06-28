@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConfigModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="test_data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parameter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="Double" />
+    <Property Name="total_frame" Type="Int32" />
+    <Property Name="frame_rate" Type="Int32" />
+    <Property Name="bitrate" Type="Double" />
+    <Property Name="y_psnr" Type="Double" />
+    <Property Name="u_psnr" Type="Double" />
+    <Property Name="v_psnr" Type="Double" />
+    <Property Name="yuv_psnr" Type="Double" />
+    <Property Name="total_second" Type="Double" />
+    <Property Name="output_image" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="config_files" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ConfigEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="test_data" EntityType="Self.test_data" />
+    <EntitySet Name="config_parameters" EntityType="ConfigModel.config_parameters" />
+    <EntitySet Name="param_analysis" EntityType="ConfigModel.param_analysis" />
+  </EntityContainer>
+  <EntityType Name="config_parameters">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parameter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="evolution" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="default_value" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Name="tag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="param_analysis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parameter" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="analysis" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

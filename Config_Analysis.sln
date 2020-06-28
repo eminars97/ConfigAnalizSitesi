@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Config_Analysis", "Config_Analysis\", "{54C0DEFE-8668-47C7-B5D7-C8370FAD2334}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{81fceb18-453f-4e7b-9ea0-99d6a23831d8}|ClassLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49213"
+		Debug.AspNetCompiler.PhysicalPath = "Config_Analysis\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49213\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49213"
+		Release.AspNetCompiler.PhysicalPath = "Config_Analysis\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49213\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49213"
+		SlnRelativePath = "Config_Analysis\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{D31AB7BF-98FD-4E01-BD14-38906BD1B183} = {D31AB7BF-98FD-4E01-BD14-38906BD1B183}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{81FCEB18-453F-4E7B-9EA0-99D6A23831D8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService(1)", "WCFService\", "{D31AB7BF-98FD-4E01-BD14-38906BD1B183}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49532"
+		Debug.AspNetCompiler.PhysicalPath = "WCFService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49532\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49532"
+		Release.AspNetCompiler.PhysicalPath = "WCFService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49532\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49532"
+		SlnRelativePath = "WCFService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54C0DEFE-8668-47C7-B5D7-C8370FAD2334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C0DEFE-8668-47C7-B5D7-C8370FAD2334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C0DEFE-8668-47C7-B5D7-C8370FAD2334}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C0DEFE-8668-47C7-B5D7-C8370FAD2334}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{81FCEB18-453F-4E7B-9EA0-99D6A23831D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FCEB18-453F-4E7B-9EA0-99D6A23831D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FCEB18-453F-4E7B-9EA0-99D6A23831D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FCEB18-453F-4E7B-9EA0-99D6A23831D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31AB7BF-98FD-4E01-BD14-38906BD1B183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31AB7BF-98FD-4E01-BD14-38906BD1B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31AB7BF-98FD-4E01-BD14-38906BD1B183}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31AB7BF-98FD-4E01-BD14-38906BD1B183}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {865299DD-FA2C-4C8A-B385-04BE1504A6F3}
+	EndGlobalSection
+EndGlobal

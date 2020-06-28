@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConfigModelStoreContainer" CdmEntityContainer="ConfigEntities">
+    <EntitySetMapping Name="test_data">
+      <EntityTypeMapping TypeName="ConfigModel.test_data">
+        <MappingFragment StoreEntitySet="test_data">
+          <ScalarProperty Name="config_files" ColumnName="config_files" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parameter" ColumnName="parameter" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="total_frame" ColumnName="total_frame" />
+          <ScalarProperty Name="frame_rate" ColumnName="frame_rate" />
+          <ScalarProperty Name="bitrate" ColumnName="bitrate" />
+          <ScalarProperty Name="y_psnr" ColumnName="y_psnr" />
+          <ScalarProperty Name="u_psnr" ColumnName="u_psnr" />
+          <ScalarProperty Name="v_psnr" ColumnName="v_psnr" />
+          <ScalarProperty Name="yuv_psnr" ColumnName="yuv_psnr" />
+          <ScalarProperty Name="total_second" ColumnName="total_second" />
+          <ScalarProperty Name="output_image" ColumnName="output_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="config_parameters">
+      <EntityTypeMapping TypeName="ConfigModel.config_parameters">
+        <MappingFragment StoreEntitySet="config_parameters">
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="default_value" ColumnName="default_value" />
+          <ScalarProperty Name="evolution" ColumnName="evolution" />
+          <ScalarProperty Name="parameter" ColumnName="parameter" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_analysis">
+      <EntityTypeMapping TypeName="ConfigModel.param_analysis">
+        <MappingFragment StoreEntitySet="param_analysis">
+          <ScalarProperty Name="analysis" ColumnName="analysis" />
+          <ScalarProperty Name="parameter" ColumnName="parameter" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConfigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="config_parameters">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parameter" Type="nvarchar" MaxLength="50" />
+    <Property Name="evolution" Type="nvarchar" MaxLength="150" />
+    <Property Name="default_value" Type="nvarchar" MaxLength="30" />
+    <Property Name="description" Type="nvarchar" MaxLength="800" />
+    <Property Name="tag" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="param_analysis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parameter" Type="nvarchar" MaxLength="100" />
+    <Property Name="analysis" Type="nvarchar" MaxLength="1500" />
+  </EntityType>
+  <EntityType Name="test_data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parameter" Type="nvarchar" MaxLength="50" />
+    <Property Name="value" Type="float" />
+    <Property Name="total_frame" Type="int" />
+    <Property Name="frame_rate" Type="int" />
+    <Property Name="bitrate" Type="float" />
+    <Property Name="y_psnr" Type="float" />
+    <Property Name="u_psnr" Type="float" />
+    <Property Name="v_psnr" Type="float" />
+    <Property Name="yuv_psnr" Type="float" />
+    <Property Name="total_second" Type="float" />
+    <Property Name="output_image" Type="nvarchar" MaxLength="100" />
+    <Property Name="config_files" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="ConfigModelStoreContainer">
+    <EntitySet Name="config_parameters" EntityType="Self.config_parameters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="param_analysis" EntityType="Self.param_analysis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="test_data" EntityType="Self.test_data" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
